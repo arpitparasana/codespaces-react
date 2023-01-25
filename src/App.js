@@ -1,4 +1,6 @@
 import './App.css';
+import { exportTest } from './datarepo/data';
+import Test from './datarepo/testComponent';
 
 function App() {
   return (
@@ -12,14 +14,8 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          {exportTest}
+          <Test label="Hello World!"/>
         </p>
       </header>
     </div>
